@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUMAN BODY ANATOMY</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            direction: ltr;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background: #E85E5D;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 25px;
+        }
+        .nav a:hover {
+            color: #6b2828;
+        }
+        
+
+        .stomach-container {
+            position: absolute;
+            top: 222px;
+            left: 58px;
+            width: 250px; /* تحديد العرض */
+            height: auto; /* الحفاظ على تناسب الطول */
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .stomach-img {
+            width: 80%;
+            height: auto;
+            cursor: pointer;
+        }
+
+
+
+
+
+  
+        .esophagus-container {
+            position: absolute;
+            top: 80px;
+            left: 160px;
+            width: 250px; /* تحديد العرض */
+            height: auto; /* الحفاظ على تناسب الطول */
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .esophagus-img {
+            width: 6%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .intestine-large-container {
+            position: absolute;
+            top: 340px;
+            left: 20px;
+            width: 250px; /* تحديد العرض */
+            height: auto; /* الحفاظ على تناسب الطول */
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .intestine-large-img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+
+        .intestine-small-container {
+            position: absolute;
+            top: 410px;
+            left: 40px;
+            width: 250px; /* تحديد العرض */
+            height: auto; /* الحفاظ على تناسب الطول */
+            flex: 1;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .intestine-small-img {
+            width: 80%;
+            height: auto;
+            cursor: pointer;
+        }
+    
+        
+
+      
+
+
+
+
+        .layer-list {
+          flex: 1;
+            position: absolute;
+            text-align: left;
+            align-content: flex-start;
+            left: 30%;
+            display: none;
+           
+        }
+        .layer-list button {
+          display: block;
+            margin: 10px 0;
+            padding: 10px 15px;
+            background-color: #ff7f7f;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: left; /* النص داخل الزر لليسار */
+        }
+
+        .layer-img-container {
+          position: absolute;
+            top: 100px;
+            left: 1105px;
+            width: 250px; /* تحديد العرض */
+            flex: 1;
+            
+            display: flex;
+            justify-content: flex-end;
+        }
+        .layer-img {
+            width: 100%;
+            height: auto;
+            width: 700px;
+            display: block;
+            position: absolute;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">HUMAN BODY ANATOMY</div>
+        <div class="nav">
+            <a href="#">HOME</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CONTACT US</a>
+        </div>
+    </div>
+
+   
+
+
+
+
+
+    <div class="stomach-container">
+        <img src="2.png" alt="المعدة" class="stomach-img" onclick="toggleLayers('stomachList')">
+    </div>
+    <div class="intestine-large-container">
+      <img src="4.png" alt="الامعاء الغليظة" class="intestine-large-img" onclick="toggleLayers('largeIntestineList')">
+  </div>
+    <div class="intestine-small-container">
+        <img src="3.png" alt="الامعاء الدقيقة" class="intestine-small-img" onclick="toggleLayers('smallIntestineList')">
+    </div>
+    
+    <div class="esophagus-container">
+        <img src="1.png" alt="المرئ" class="esophagus-img" onclick="toggleLayers('esophagusList')">
+    </div>
+
+    <div class="layer-list" id="stomachList">
+      <button onclick="toggleLayer('s1.png')">Mucosa </button>
+      <button onclick="toggleLayer('s2.png')">Submucosa </button>
+      <button onclick="toggleLayer('s3.png')">Muscularis </button>
+      <button onclick="toggleLayer('s4.png')">Subserosa </button>
+      <button onclick="toggleLayer('s5.png')">Serosa </button>
+    </div>
+    <div class="layer-list" id="largeIntestineList">
+      <button onclick="toggleLayer('l.one.png')">Epithelium  </button>
+      <button onclick="toggleLayer('l.two.png')">Lamina Propria  </button>
+      <button onclick="toggleLayer('l.three.png')">Muscularis Mucosae</button>
+      <button onclick="toggleLayer('l.four.png')">Submucosa </button>
+      <button onclick="toggleLayer('l.five.png')">Circular Muscle Layer </button>
+      <button onclick="toggleLayer('l.six.png')">Longitudinal Muscle Layer </button>
+      <button onclick="toggleLayer('l.seven.png')">Myenteric Plexus </button>
+      <button onclick="toggleLayer('l.eight.png')">Subserosa </button>
+      <button onclick="toggleLayer('l.nine.png')">Serosa </button>
+  
+    </div>
+    <div class="layer-list" id="smallIntestineList">
+      <button onclick="toggleLayer('layer1.png')">Mucosa </button>
+      <button onclick="toggleLayer('layer2.png')">Submucosa </button>
+      <button onclick="toggleLayer('layer3.png')">Circular muscle </button>
+      <button onclick="toggleLayer('layer4.png')">Longitudinal muscle </button>
+      <button onclick="toggleLayer('layer5.png')">Serosa </button>
+      <button onclick="toggleLayer('layer6.png')">Plica </button>
+      <button onclick="toggleLayer('layer7.png')">Submucosal glands </button>
+      <button onclick="toggleLayer('layer8.png')">Villi </button>
+      <button onclick="toggleLayer('layer9.png')">Mesentery </button>
+    </div>
+    
+    <div class="layer-list" id="esophagusList">
+      <button onclick="toggleLayer('d.layer1.png')">Lumen </button>
+      <button onclick="toggleLayer('d.layer2.png')">Epithelium </button>
+      <button onclick="toggleLayer('d.layer3.png')">Lamina Propria </button>
+      <button onclick="toggleLayer('d.layer4.png')">Muscularis Mucosea </button>
+      <button onclick="toggleLayer('d.layer5.png')">Submucosa </button>
+      <button onclick="toggleLayer('d.layer6.png')">Submucosal Plexus </button>
+      <button onclick="toggleLayer('d.layer7.png')">Circular Muscle </button>
+      <button onclick="toggleLayer('d.layer8.png')">Longitudinal Muscle </button>
+      <button onclick="toggleLayer('d.layer9.png')">Longitudinal Muscle </button>
+      <button onclick="toggleLayer('d.layer10.png')">Serosa </button>
+      
+    </div>
+
+    <div class="layer-img-container" id="imageContainer"></div>
+
+    <script>
+        let currentOpenListId = null; // لتتبع القائمة المفتوحة حالياً
+    
+        function toggleLayers(listId) {
+            const container = document.getElementById("imageContainer");
+    
+            // إذا القائمة المفتوحة هي نفسها اللي كبسناها
+            if (currentOpenListId === listId) {
+                document.getElementById(listId).style.display = "none";
+                container.innerHTML = ""; // حذف جميع الصور
+                currentOpenListId = null;
+            } else {
+                // إغلاق كل القوائم
+                document.querySelectorAll('.layer-list').forEach(list => list.style.display = 'none');
+                container.innerHTML = ""; // حذف الصور
+                document.getElementById(listId).style.display = "block"; // عرض القائمة المطلوبة
+                currentOpenListId = listId;
+            }
+        }
+    
+        function toggleLayer(imgSrc) {
+            const container = document.getElementById("imageContainer");
+    
+            // التحقق إذا كانت الصورة موجودة
+            const existingImg = Array.from(container.children).find(img => img.src.includes(imgSrc));
+    
+            if (existingImg) {
+                container.removeChild(existingImg); // حذفها إذا موجودة
+            } else {
+                const img = document.createElement("img");
+                img.src = imgSrc;
+                img.className = "layer-img";
+                container.appendChild(img); // إضافتها إذا مش موجودة
+            }
+        }
+    </script>
+    
+</body>
+</html>
