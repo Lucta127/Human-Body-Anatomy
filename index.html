@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
         body {
-            font-family: 'Open Sans', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -16,17 +16,21 @@
             background-color: #f8f9fa;
         }
         .header {
-            background:  #E85E5D;
+            background: #E85E5D;
             padding: 15px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             color: white;
             font-size: 20px;
-            padding-left: 730px;
-            padding-right: 40px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
-       
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            opacity: 0; /* الرقم من 0 (شفاف تمامًا) إلى 1 (بدون شفافية) */
+        }
         .nav a {
             color: white;
             text-decoration: none;
@@ -35,7 +39,6 @@
         .nav a:hover {
             color: #6b2828;
         }
-        
         .hero {
             display: flex;
             justify-content: space-between;
@@ -94,8 +97,8 @@
 </head>
 <body>
 
-
     <div class="header">
+        <div class="logo">HUMAN BODY ANATOMY</div>
         <div class="nav">
             <a href="index.html">HOME</a>
             <a href="WW.html">ANATOMY</a>
