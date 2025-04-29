@@ -39,7 +39,7 @@
       color: #6b2828;
     }
 
-    /* الأعضاء */
+
     .stomach-container, .esophagus-container, .intestine-large-container, .intestine-small-container {
       position: absolute;
       flex: 1;
@@ -82,7 +82,7 @@
       width: 105%;
     }
 
-    /* قائمة الطبقات */
+ 
     .layer-list {
       flex: 1;
       width: 200px;
@@ -105,8 +105,8 @@
     }
 
     .tooltip-container button {
-      width: 160px; /* 👈 عرض موحد لكل الأزرار */
-      height: 30px; /* 👈 ارتفاع موحد */
+      width: 160px; 
+      height: 30px; 
       margin: 5px 0;
       padding: 10px 15px;
       background-color: #E85E5D;
@@ -167,7 +167,6 @@
     </div>
   </div>
 
-  <!-- صور الأعضاء -->
   <div class="stomach-container">
     <img src="22.png" alt="المعدة" title="Stomach" class="stomach-img" onclick="toggleLayers('stomachList')">
   </div>
@@ -185,7 +184,6 @@
     <img src="11.png" alt="المرئ" title="Esophagus" class="esophagus-img" onclick="toggleLayers('esophagusList')">
   </div>
 
-  <!-- القوائم -->
   <div class="layer-list" id="stomachList">
     <div class="tooltip-container">
       <button onclick="toggleLayer('s1.png')">Mucosa</button>
@@ -247,7 +245,6 @@
         <button onclick="toggleLayer('l.nine.png')">Serosa </button>
         <span class="tooltip-text">Outermost layer that <br>protects the colon.</span>
       </div>
-    <!-- كمل باقي الطبقات بنفس الطريقة -->
   </div>
 
   <div class="layer-list" id="smallIntestineList">
@@ -283,7 +280,6 @@
         <button onclick="toggleLayer('layer9.png')">Mesentery</button>
         <span class="tooltip-text">A membrane that attaches the intestines to the abdominal wall.</span>
       </div>
-    <!-- كمل الباقي بنفس النمط -->
   </div>
 
   <div class="layer-list" id="esophagusList">
@@ -323,13 +319,10 @@
         <button onclick="toggleLayer('d.layer9.png')">Serosa</button>
         <span class="tooltip-text">A smooth outer covering that reduces<br> friction with other organs.</span>
       </div>
-    <!-- كمل الباقي بنفس النمط -->
   </div>
 
-  <!-- عرض الصور -->
   <div class="layer-img-container" id="imageContainer"></div>
 
-  <!-- سكربت -->
   <script>
     let currentOpenListId = null;
 
